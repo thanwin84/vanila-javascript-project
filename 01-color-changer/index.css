@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+.canvas {
+    padding: 10px;
+    display: flex;
+    justify-items: center;
+    background-color: aliceblue;
+}
+.button {
+    margin: 2px;
+    height: 6rem;
+    width: 6rem;
+    border: 2px solid gray;
+}
+
+#blue {
+    background-color: blue;
+}
+#white {
+    background-color: white;
+}
+#yellow {
+    background-color: yellow;
+}
+#gray {
+    background-color: gray;
+}
