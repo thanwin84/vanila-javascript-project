@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1.3rem;
+    
+}
+form, p {
+    width: 40%;
+    margin-bottom: 4px;
+}
+.form-group {
+    margin-bottom: 4px;
+}
+button {
+    background-color: rgb(49, 216, 43);
+    border: none;
+    padding-top: 6px;
+    border-radius: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    color: rgba(255, 255, 255, 0.922);
+    cursor: pointer;
+}
+
+.draggable {
+    text-align: center;
+    background-color: rgb(101, 101, 234);
+    padding: 10px 17px;
+    border-radius: 5px;
+    cursor: move;
+    color: white
+}
+.container {
+    padding: 10px;
+    border: 2px solid lightgray;
+    margin-bottom: 10px;
+}
+
+.draggable .dragging {
+    opacity: 0.5;
+}
