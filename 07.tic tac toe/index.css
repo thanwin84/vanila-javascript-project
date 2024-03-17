@@ -1,0 +1,86 @@
+
+/* Primary Colors */
+:root {
+    --primary-color: #007bff; /* Blue */
+    --secondary-color: #6c757d; /* Gray */
+  }
+  
+  /* Background Colors */
+  :root {
+    --background-color: #f8f9fa; /* Light Gray */
+    --primary-bg-color: #ffffff; /* White */
+    --secondary-bg-color: #f0f0f0; /* Lighter Gray */
+  }
+  
+  /* Text Colors */
+  :root {
+    --text-color: #212529; /* Black */
+    --text-light: #6c757d; /* Light Gray */
+    --text-muted: #adb5bd; /* Muted Gray */
+  }
+  
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+   
+}
+
+h2 {
+  color: var(--text-color)
+}
+
+button {
+  padding: 8px 18px;
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+.game {
+  display: flex;
+  width: 450px;
+  padding: 10px;
+}
+
+#tic-tac-toe {
+    display: flex;
+    background-color: var(--primary-bg-color);
+    flex-direction: column;
+    margin-right: 8px;
+}
+
+.cell {
+    
+    background-color: var(--secondary-color);
+    margin: 2px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    height: 75px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+}
+
+.winning {
+  background-color: var(--primary-color);
+
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
