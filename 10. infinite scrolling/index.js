@@ -56,15 +56,14 @@ function filterPosts(e){
     })
 }
 
-    
+let timeoutId
 function debounce(callback, delay){
-    let timeoutId;
     return function (){
         if (timeoutId){
             clearTimeout(timeoutId)
         }
         timeoutId = setTimeout(()=>{
-            console.log("done")
+            
             callback()
         }, delay)
         
@@ -83,6 +82,6 @@ window.addEventListener('scroll', ()=>{
 
 
 filter.addEventListener('input', function(e){
-    debounce(()=>filterPosts(e), 500)()
+    debounce(()=>filterPosts(e), 600)()
 }
 )
