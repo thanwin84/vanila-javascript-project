@@ -1,87 +1,107 @@
-
-/* Primary Colors */
+/* Dark Mode */
 :root {
-    --primary-color: #007bff; /* Blue */
+    /* Primary Colors */
+    --primary-color: #0d6efd; /* Dark Blue */
     --secondary-color: #6c757d; /* Gray */
-  }
   
-  /* Background Colors */
-  :root {
-    --background-color: #f8f9fa; /* Light Gray */
-    --primary-bg-color: #ffffff; /* White */
-    --secondary-bg-color: #f0f0f0; /* Lighter Gray */
-  }
+    /* Background Colors */
+    --background-color: #212529; /* Dark Gray */
+    --primary-bg-color: #343a40; /* Darker Gray */
+    --secondary-bg-color: #495057; /* Darker Gray */
   
-  /* Text Colors */
-  :root {
-    --text-color: #212529; /* Black */
-    --text-light: #6c757d; /* Light Gray */
-    --text-muted: #adb5bd; /* Muted Gray */
-  }
-  
+    /* Text Colors */
+    --text-color: #ffffff; /* White */
+    --text-light: #adb5bd; /* Light Gray */
+    --text-muted: #6c757d; /* Muted Gray */
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: 0
+    margin: 0;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    
+body {
+   background-color: var(--background-color);
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   
    
 }
 
-h2 {
-  color: var(--text-color)
-}
-
 button {
-  padding: 8px 18px;
-  background-color: var(--primary-color);
-  border: none;
-  color: white;
-  border-radius: 5px;
-}
-.game {
-  display: flex;
-  width: 450px;
-  padding: 10px;
-}
-
-#tic-tac-toe {
-    display: flex;
-    background-color: var(--primary-bg-color);
-    flex-direction: column;
-    margin-right: 8px;
-}
-
-.cell {
-    
-    background-color: var(--secondary-color);
-    margin: 2px;
-    color: white;
-    font-weight: bold;
     cursor: pointer;
-    height: 75px;
-    width: 75px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    
+}
+.primary-btn {
+    background-color: #007bff;
+    color: #ffffff; /* Text color */
+}
+.primary-btn:hover {
+    background-color: #0056b3; /* Darken primary color on hover */
+    color: #ffffff; /* Text color on hover */
+}
+.secondary-btn {
+    background-color: #6c757d;
+    color: #ffffff
+}
+.secondary-btn:hover {
+    background-color: #545b62; /* Darken secondary color on hover */
+    border-color: #545b62; /* Darken border color on hover */
+    color: #ffffff; 
+}
+.success-btn {
+    background-color: #28a745;
+    color: #ffffff;
+}
+.success-btn:hover {
+    background-color: #218838; 
+    border-color: #218838; 
+    color: #ffffff; 
+}
+
+h1, h2, h3, h4 {
+    color: var(--text-color)
+}
+
+#board {
+    padding-top: 10px;
+    position: relative;
 }
 
 .row {
     display: flex;
+    
 }
 
+.cell {
+    width: 60px;
+    height: 60px;
+    border: 1px solid gray;
+    margin: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: var(--primary-bg-color);
+    color: var(--text-color)
+}
+.cell:hover{
+    background-color: var(--primary-color);
+}
 .winning {
-  background-color: var(--primary-color);
-
+    background-color: var(--primary-color);
 }
 
 .sidebar {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    padding: 10px;
 }
